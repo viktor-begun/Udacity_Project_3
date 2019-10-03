@@ -5,3 +5,7 @@
 **Purpose:** to understand the results of an A/B test run by an e-commerce website. The company has developed a new web page in order to try and increase the number of users who "convert," meaning the number of users who decide to pay for the company's product. The goal is to help the company understand if they should implement this new page, keep the old page, or perhaps run the experiment longer to make their decision.
 
 **Prerequisites:** [Python](https://www.udacity.com/) enviroment (e.g. [Anaconda](https://www.anaconda.com)), [Jupyter Notebook](https://jupyter.org/), [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/), [Random](https://docs.python.org/3/library/random.html), [Matplotlib](https://matplotlib.org).
+
+For more information on A/B Tests see, for example, [the wiki page](https://en.wikipedia.org/wiki/A/B_testing) and the [figure below](https://en.wikipedia.org/wiki/A/B_testing#/media/File:A-B_testing_example.png). 
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/A-B_testing_example.png" width="100%">
+

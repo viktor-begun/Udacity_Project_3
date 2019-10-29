@@ -1,9 +1,6 @@
-
 ## Analyze A/B Test Results
 
-You may either submit your notebook through the workspace here, or you may work from your local machine and submit through the next page.  Either way assure that your code passes the project [RUBRIC](https://review.udacity.com/#!/projects/37e27304-ad47-4eb0-a1ab-8c12f60e43d0/rubric).  **Please save regularly.**
-
-This project will assure you have mastered the subjects covered in the statistics lessons.  The hope is to have this project be as comprehensive of these topics as possible.  Good luck!
+This project will assure that the subjects covered in the statistics lessons are mastered. The hope is to have this project be as comprehensive of these topics as possible.
 
 ## Table of Contents
 - [Introduction](#intro)
@@ -15,11 +12,10 @@ This project will assure you have mastered the subjects covered in the statistic
 <a id='intro'></a>
 ### Introduction
 
-A/B tests are very commonly performed by data analysts and data scientists.  It is important that you get some practice working with the difficulties of these 
+A/B tests are very commonly performed by data analysts and data scientists.  It is important to get some practice working with the difficulties of these. 
 
-For this project, you will be working to understand the results of an A/B test run by an e-commerce website.  Your goal is to work through this notebook to help the company understand if they should implement the new page, keep the old page, or perhaps run the experiment longer to make their decision.
+The goal of this project is to understand the results of an A/B test run by an e-commerce website and help the company understand if they should implement the new page, keep the old page, or perhaps run the experiment longer to make their decision.
 
-**As you work through this notebook, follow along in the classroom and answer the corresponding quiz questions associated with each question.** The labels for each classroom concept are provided for each question.  This will assure you are on the right track as you work through the project, and you can feel more confident in your final submission meeting the criteria.  As a final check, assure you meet all the criteria on the [RUBRIC](https://review.udacity.com/#!/projects/37e27304-ad47-4eb0-a1ab-8c12f60e43d0/rubric).
 
 <a id='probability'></a>
 #### Part I - Probability
@@ -37,7 +33,7 @@ import matplotlib.pyplot as plt
 random.seed(42)
 ```
 
-`1.` Now, read in the `ab_data.csv` data. Store it in `df`.  **Use your dataframe to answer the questions in Quiz 1 of the classroom.**
+`1.` Now, read in the `ab_data.csv` data. Store it in `df`. 
 
 a. Read in the dataset and take a look at the top few rows here:
 
@@ -77,7 +73,7 @@ df.head()
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>851104</td>
       <td>2017-01-21 22:11:48.556739</td>
       <td>control</td>
@@ -85,7 +81,7 @@ df.head()
       <td>0</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>804228</td>
       <td>2017-01-12 08:01:45.159739</td>
       <td>control</td>
@@ -93,7 +89,7 @@ df.head()
       <td>0</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>661590</td>
       <td>2017-01-11 16:55:06.154213</td>
       <td>treatment</td>
@@ -101,7 +97,7 @@ df.head()
       <td>0</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>853541</td>
       <td>2017-01-08 18:28:03.143765</td>
       <td>treatment</td>
@@ -109,7 +105,7 @@ df.head()
       <td>0</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>864975</td>
       <td>2017-01-21 01:52:26.210827</td>
       <td>control</td>
@@ -189,7 +185,7 @@ print('The number of missing values in the dataframe:',df.isnull().sum().sum())
     The number of missing values in the dataframe: 0
     
 
-`2.` For the rows where **treatment** does not match with **new_page** or **control** does not match with **old_page**, we cannot be sure if this row truly received the new or old page.  Use **Quiz 2** in the classroom to figure out how we should handle these rows.  
+`2.` For the rows where **treatment** does not match with **new_page** or **control** does not match with **old_page**, we cannot be sure if this row truly received the new or old page.  
 
 a. Now use the answer to the quiz to create a new dataset that meets the specifications from the quiz.  Store your new dataframe in **df2**.
 
@@ -1637,37 +1633,3 @@ np.exp(results_interaction.params)
 **The data can be described by only one parameter - intercept. The p-value for other values is much larger than the assumed alpha value of 0.05. There is NO evidence that country had an impact on conversion.** 
 
 **The data suggest that the company may increase the revenue only by increasing the number of users.**
-
-<a id='conclusions'></a>
-## Finishing Up
-
-> Congratulations!  You have reached the end of the A/B Test Results project!  You should be very proud of all you have accomplished!
-
-> **Tip**: Once you are satisfied with your work here, check over your report to make sure that it is satisfies all the areas of the rubric (found on the project submission page at the end of the lesson). You should also probably remove all of the "Tips" like this one so that the presentation is as polished as possible.
-
-
-## Directions to Submit
-
-> Before you submit your project, you need to create a .html or .pdf version of this notebook in the workspace here. To do that, run the code cell below. If it worked correctly, you should get a return code of 0, and you should see the generated .html file in the workspace directory (click on the orange Jupyter icon in the upper left).
-
-> Alternatively, you can download this report as .html via the **File** > **Download as** submenu, and then manually upload it into the workspace directory by clicking on the orange Jupyter icon in the upper left, then using the Upload button.
-
-> Once you've done this, you can submit your project by clicking on the "Submit Project" button in the lower right here. This will create and submit a zip file with this .ipynb doc and the .html or .pdf version you created. Congratulations!
-
-
-```python
-from subprocess import call
-call(['python', '-m', 'nbconvert', 'Analyze_ab_test_results_notebook.ipynb'])
-```
-
-
-
-
-    0
-
-
-
-
-```python
-
-```

@@ -19,9 +19,9 @@ It means that **the second method gave the same result. There is NO need to intr
 
 #### Part III - A regression approach
 
-The p-value associated with ab_page is 0.19. It is close to the value given by the "ztest", and approximately twice as large as the value found in Part II. This might the cause of the one-sided p-value calculated in Part II, and two-sided p-value calculate in the z-test and by the "sm.Logit()".
+- The p-value associated with ab_page is 0.19. It is close to the value given by the "ztest", and approximately twice as large as the value found in Part II. This might be the cause of the one-sided p-value calculated in Part II, and two-sided p-value calculate in the z-test and by the "sm.Logit()".
 
-The data can be described by only one parameter - intercept. The p-value for other values is much larger than the assumed alpha value of 0.05. **There is NO evidence that country had an impact on conversion.**
+- The data can be described by only one parameter - intercept. The p-value for other values is much larger than the assumed alpha value of 0.05. **There is NO evidence that country had an impact on conversion.**
 
 **The data suggest that the company may increase the revenue only by increasing the number of users.**
 

@@ -5,6 +5,8 @@
 For more information on A/B Tests see, for example, [the wiki page](https://en.wikipedia.org/wiki/A/B_testing) and the [figure below](https://en.wikipedia.org/wiki/A/B_testing#/media/File:A-B_testing_example.png). 
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/A-B_testing_example.png" width="100%">
 
+**The whole project can be found in the `Analyze_ab_test_results.md` file.**
+
 ### Conclusions:
 #### Part I - Probability 
 - The probability to convert is approximately 12% for the control and for the treatment group. The size of the group is large - about 30000 individuals. There is NO sufficient evidence to conclude that the new treatment page leads to more conversions. **No need to introduce the new page.**
@@ -24,5 +26,6 @@ It means that **the second method gave the same result. There is NO need to intr
 - The data can be described by only one parameter - intercept. The p-value for other values is much larger than the assumed alpha value of 0.05. **There is NO evidence that country had an impact on conversion.**
 
 **The data suggest that the company may increase the revenue only by increasing the number of users.**
+
 
 **Prerequisites:** [Python](https://www.udacity.com/) enviroment (e.g. [Anaconda](https://www.anaconda.com)), [Jupyter Notebook](https://jupyter.org/), [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/), [Random](https://docs.python.org/3/library/random.html), [Matplotlib](https://matplotlib.org), see the `requirements.txt` file for the list of all installed packages.
